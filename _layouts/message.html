@@ -1,0 +1,101 @@
+---
+layout: common
+---
+<!--
+##################################################
+   Message
+##################################################
+-->
+<header id="header">
+    <div class="header-Container">
+        <div class="messageHeader">
+            <div class="messageHeader-Photo">
+                <img class="messageHeader-Img" alt="" src="/message/img/{{ page.message_image }}">
+            </div>
+            <div class="messageHeader-Text">
+                <h1 class="messageHeader-Title"><span>開発者メッセージ</span>Exastro {{ page.message_type }}</h1>
+                <div class="messageHeader-Name">{{ page.message_author }}</div>
+            </div>        
+        </div>
+    </div>
+</header>
+
+<main id="main">
+    <article class="article" id="article">
+        <div class="article-Container">
+            <div class="article-Body">
+
+                <nav class="topicPath">
+                    <ol class="topicPath-List">
+                        <li class="topicPath-Item"><a class="topicPath-Link" href="/index_ja.html">HOME</a></li>
+                        <li class="topicPath-Item"><a class="topicPath-Link" href="/message/index_ja.html">開発者メッセージ一覧</a></li>                        
+                        <li class="topicPath-Item">Exastro{% if message_type %} {{ message_type }}{% endif %}</li>
+                    </ol>
+                </nav>
+
+                <section class="section">
+
+{{ content }}
+
+                </section>
+                {% if page.author_profile %}<section class="section">
+                    <div class="messageAuthor">
+                      <div class="messageAuthor-Photo"><img src="{{ page.author_photo }}" alt="{{ page.author_name }}"></div>
+                      <div class="messageAuthor-Position">{{ page.author_position }}</div>
+                      <div class="messageAuthor-Name">{{ page.author_name }}</div>
+                      <div class="messageAuthor-Profile">{{ page.author_profile }}</div>
+                  </div>
+                </section>{% endif %}
+                <section class="section">
+                    <div class="section-FooterMenu">
+                        <ul class="section-FooterMenu-List">
+                            <li class="section-FooterMenu-Item">
+                                <a class="section-FooterMenu-Link touch" href="/"><span><i class="fa-solid fa-circle-arrow-left"></i> Homeに戻る</span></a>
+                            </li>
+                            {% if page.message_type %}<li class="section-FooterMenu-Item">
+                                <a class="section-FooterMenu-Link touch" href="{{ detail_url }}"><span>Exastro {{ page.message_type }}の詳細はこちら <i class="fa-solid fa-circle-arrow-right"></i></span></a>
+                            </li>{% endif %}
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="article-Footer">
+                <section  class="section">
+                    <div class="messageMenu">
+                        <h2 class="section-SubTitle">開発者メッセージ一覧</h2>
+                        <ul class="messageMenu-List">
+                            <li class="messageMenu-Item"><a class="messageMenu-Link exastro touch" href="/message/exastro_ja.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu01.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>開発者メッセージ</span>Exastroにかける夢</div>
+                                    <div class="messageMenu-SubTitle">システムはどんどん複雑化し、人材はどんどん減ってゆく</div>
+                                </div>
+                            </a></li>
+                            <li class="messageMenu-Item"><a class="messageMenu-Link ita touch" href="/message/ita_ja.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu02.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>開発者メッセージ</span>Exastro IT Automation</div>
+                                    <div class="messageMenu-SubTitle">開発の発想をカタチにしたExastroの原点</div>
+                                </div>
+                            </a></li>
+                            <li class="messageMenu-Item"><a class="messageMenu-Link oase touch" href="/message/oase_ja.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu03.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>開発者メッセージ</span>Exastro OASE</div>
+                                    <div class="messageMenu-SubTitle">24時間気が抜けない運用の現場をなんとかしたい</div>
+                                </div>
+                            </a></li>
+                            <li class="messageMenu-Item"><a class="messageMenu-Link epoch touch" href="/message/epoch_ja.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu04.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>開発者メッセージ</span>Exastro EPOCH</div>
+                                    <div class="messageMenu-SubTitle">自分たちが苦労している今の状況を解決してこそExastro</div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
+</main>
