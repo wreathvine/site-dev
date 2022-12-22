@@ -3,7 +3,7 @@ title: Asset
 layout: common
 docs: exastro
 language: ja
-repository: /docs
+repository:
 page_class: event
 page_name: event
 description: Exastroはシステムライフサイクル(設計・開発・設定・運用)をデジタル化・自動化・省力化することを目的としたオープンソースのソフトウェアスイートです。

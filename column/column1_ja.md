@@ -3,13 +3,13 @@ title: DXを実現するためのポイント | コラム
 layout: column
 docs: exastro
 language: ja
-repository: /docs
+repository:
 sub_dir: /column
 page_class: column
 page_name: column1
 column_title: DXを実現するためのポイント
 description: DX（デジタルトランスフォーメーション）の実現が叫ばれて久しいですが、号令ばかりでなかなかDXが進められないと感じられていることも多いのではないでしょうか。DXは単なるIT化とは異なり既存のビジネスモデルからの変革も求められます。
-author_photo: /docs/column/img/author1.png
+author_photo: /column/img/author1.png
 author_position: 日本仮想化技術株式会社 代表取締役兼CEO
 author_name: 宮原 徹
 author_profile: 2006年に日本仮想化技術（株）を設立し、仮想化技術に関する情報発信とコンサルティングを行う。現在は自動化、CI/CD・DevOpsなどの活用について調査・研究を行っている。

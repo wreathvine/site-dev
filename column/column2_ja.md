@@ -3,18 +3,18 @@ title: DX実現のための自動化の役割 | コラム
 layout: column
 docs: exastro
 language: ja
-repository: /docs
+repository:
 sub_dir: /column
 page_class: column
 page_name: column2
 column_title: DX実現のための自動化の役割
 description: DXを実現するためのポイントとして、【１】データ活用、【２】スピード・アジリティ、【３】全体最適の3点について解説しました。今回は、DXを実現する上での重要な技術である「自動化」の役割について解説します。
-author_photo: /docs/column/img/author1.png
+author_photo: /column/img/author1.png
 author_position: 日本仮想化技術株式会社 代表取締役兼CEO
 author_name: 宮原 徹
 author_profile: 2006年に日本仮想化技術（株）を設立し、仮想化技術に関する情報発信とコンサルティングを行う。現在は自動化、CI/CD・DevOpsなどの活用について調査・研究を行っている。
 ---
-[DXを実現するためのポイント](/docs/column/column1_ja.html)として、【１】データ活用、【２】スピード・アジリティ、【３】全体最適の3点について解説しました。今回は、DXを実現する上での重要な技術である「自動化」の役割について解説します。
+[DXを実現するためのポイント](/column/column1_ja.html)として、【１】データ活用、【２】スピード・アジリティ、【３】全体最適の3点について解説しました。今回は、DXを実現する上での重要な技術である「自動化」の役割について解説します。
 
 ## 自動化とは
 
