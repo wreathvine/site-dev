@@ -54,15 +54,15 @@ function viewDocuments( ducumentsJsonUrl ) {
 
           switch( documentType ) {
             case 'none':
-              viewHTML += '<img src="asset/img/under_construction.jpg" alt="Under Construction"></div>';
+              viewHTML += '<img src="/docs/asset/img/under_construction.jpg" alt="Under Construction"></div>';
               $viewDocument.prepend( viewHTML );
               break;
             case 'pdf':
             case 'slide':
               if( $viewDocument.is('.wide') ){
-                viewHTML += '<img src="asset/img/view_' + documentType + '_wide.jpg" alt="View ' + documentType + '">';
+                viewHTML += '<img src="/docs/asset/img/view_' + documentType + '_wide.jpg" alt="View ' + documentType + '">';
               } else {
-                viewHTML += '<img src="asset/img/view_' + documentType + '.jpg" alt="View ' + documentType + '">';
+                viewHTML += '<img src="/docs/asset/img/view_' + documentType + '.jpg" alt="View ' + documentType + '">';
               }
               viewHTML += '<iframe frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>'
               + '<div class="viewToolBar"><ul>'
