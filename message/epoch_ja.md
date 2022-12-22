@@ -2,7 +2,6 @@
 title: 開発者メッセージ | EPOCH
 layout: message
 language: ja
-repository:
 sub_dir: /message
 page_class: message-epoch
 page_name: epoch

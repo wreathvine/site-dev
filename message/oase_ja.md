@@ -2,7 +2,6 @@
 title: 開発者メッセージ | OASE
 layout: message
 language: ja
-repository:
 sub_dir: /message
 page_class: message-oase
 page_name: oase

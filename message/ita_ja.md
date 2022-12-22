@@ -2,7 +2,6 @@
 title: 開発者メッセージ | IT Automation
 layout: message
 language: ja
-repository:
 sub_dir: /message
 page_class: message-ita
 page_name: ita

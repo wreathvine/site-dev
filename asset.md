@@ -3,7 +3,6 @@ title: Asset
 layout: common
 docs: exastro
 language: en
-repository:
 page_class: asset
 page_name: asset
 ---

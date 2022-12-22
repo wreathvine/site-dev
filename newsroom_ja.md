@@ -3,7 +3,6 @@ title: News Room
 layout: common
 docs: exastro
 language: ja
-repository:
 page_class: newsroom
 page_name: newsroom
 description: Exastroはシステムライフサイクル(設計・開発・設定・運用)をデジタル化・自動化・省力化することを目的としたオープンソースのソフトウェアスイートです。

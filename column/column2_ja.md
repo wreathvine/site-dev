@@ -3,7 +3,6 @@ title: DX実現のための自動化の役割 | コラム
 layout: column
 docs: exastro
 language: ja
-repository:
 sub_dir: /column
 page_class: column
 page_name: column2

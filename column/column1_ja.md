@@ -3,7 +3,6 @@ title: DXを実現するためのポイント | コラム
 layout: column
 docs: exastro
 language: ja
-repository:
 sub_dir: /column
 page_class: column
 page_name: column1

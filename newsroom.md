@@ -3,7 +3,6 @@ title: News Room
 layout: common
 docs: exastro
 language: en
-repository:
 page_class: newsroom
 page_name: newsroom
 ---

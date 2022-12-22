@@ -2,7 +2,6 @@
 title: 開発者メッセージ | Exastro
 layout: message
 language: ja
-repository:
 sub_dir: /message
 page_class: message-exastro
 page_name: exastro
