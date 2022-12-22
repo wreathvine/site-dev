@@ -2,6 +2,7 @@
 title: Home
 layout: common
 language: ja
+sub_dir: /message
 page_class: message
 page_name: index
 description: Exastroはシステムライフサイクル(設計・開発・設定・運用)をデジタル化・自動化・省力化することを目的としたオープンソースのソフトウェアスイートです。
