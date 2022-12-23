@@ -8,7 +8,7 @@ page_name: ita
 message_image: thought02.png
 message_type: IT Automation
 message_author: 脇谷 徹
-detail_url: /it-automation-docs/index_ja.html
+detail_url: https://exastro-suite.github.io/it-automation-docs/index_ja.html
 description: Exastroはシステムライフサイクル(設計・開発・設定・運用)をデジタル化・自動化・省力化することを目的としたオープンソースのソフトウェアスイートです。
 ---
 <h2>どんなツール？</h2>

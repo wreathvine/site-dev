@@ -8,7 +8,7 @@ page_name: oase
 message_image: thought03.png
 message_type: OASE
 message_author: 河野 友生子
-detail_url: /oase-docs/index_ja.html
+detail_url: https://exastro-suite.github.io/oase-docs/index_ja.html
 description: Exastroはシステムライフサイクル(設計・開発・設定・運用)をデジタル化・自動化・省力化することを目的としたオープンソースのソフトウェアスイートです。
 ---
 <h2>どんなツール？</h2>
