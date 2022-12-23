@@ -42,7 +42,7 @@ Asset</h1>
 
 <li>
 <dl>
-<dt><img src="/asset/logo/exastro/Exastro-logo1-rgb.png" alt="Exastro Logo"></dt>
+<dt><img src="/assets/logo/exastro/Exastro-logo1-rgb.png" alt="Exastro Logo"></dt>
 <dd>
 <ul>
 <li><a class="touch" href="/assets/logo/exastro/Exastro-logo1-rgb.png" download>PNG</a></li>
