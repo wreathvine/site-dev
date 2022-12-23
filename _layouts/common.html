@@ -10,15 +10,19 @@
     <meta http-equiv="content-language" content="{{ page.language }}">
     
     {% if page.page_name == "index" %}
-    {% capture en %}{{ page.sub_dir }}/{% endcapture %}
+        {% capture ja %}{{ page.sub_dir }}/{% endcapture %}
     {% else %}
+        {% capture ja %}{{ page.sub_dir }}/{{ page.page_name }}.html{% endcapture %}
+    {% endif %}
+    {% assign jaPage = site.html_pages | where: "url", ja | first %}
+    
     {% capture en %}{{ page.sub_dir }}/{{ page.page_name }}_en.html{% endcapture %}
-    {% endif %}{% assign enPage = site.html_pages | where: "url", en | first %}
-    {% capture ja %}{{ page.sub_dir }}/{{ page.page_name }}.html{% endcapture %}{% assign jaPage = site.html_pages | where: "url", ja | first %}
+    {% assign enPage = site.html_pages | where: "url", en | first %}
+    
      <title>{{ page.title }} | Exastro{% if page.suite_name %} {{ page.suite_name }}{% endif %}</title>
     
-    {% if enPage.name %}<link rel="alternate" hreflang="en" href="{{ page.repository }}{{ page.sub_dir }}/{{ page.page_name }}.html">
-    {% endif %}{% if jaPage.name %}<link rel="alternate" hreflang="ja" href="{{ page.repository }}{{ page.sub_dir }}/{{ page.page_name }}_ja.html">
+    {% if enPage.name %}<link rel="alternate" hreflang="en" href="{{ page.repository }}{{ page.sub_dir }}/{{ page.page_name }}_en.html">
+    {% endif %}{% if jaPage.name %}<link rel="alternate" hreflang="ja" href="{{ page.repository }}{{ page.sub_dir }}/{{ page.page_name }}.html">
     {% endif %}<!-- Font Awesome 6.1.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
