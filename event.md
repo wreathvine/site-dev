@@ -33,7 +33,7 @@ description: Exastroはシステムライフサイクル(設計・開発・設�
     <div class="eventListData">
       <div class="eventListDate"><span class="eventListType">Webセミナー</span>2022/12/8開催</div>
       <div class="eventListMainImage">
-        <img class="eventListImage" src="/docs/asset/event_img/20221208.png" alt="イベントイメージ">
+        <img class="eventListImage" src="https://exastro-suite.github.io/docs/asset/event_img/20221208.png" alt="イベントイメージ">
       </div>
       <div class="eventListOverview">
         <div class="eventListTag"><i class="fas fa-tag"></i>
@@ -68,7 +68,7 @@ description: Exastroはシステムライフサイクル(設計・開発・設�
     <div class="eventListData">
       <div class="eventListDate"><span class="eventListType">Webセミナー</span>2020/11/18開催</div>
       <div class="eventListMainImage">
-        <img class="eventListImage" src="/docs/asset/event_img/20200911.jpg" alt="イベントイメージ">
+        <img class="eventListImage" src="https://exastro-suite.github.io/docs/asset/event_img/20200911.jpg" alt="イベントイメージ">
       </div>
       <div class="eventListOverview">
         <div class="eventListTag"><i class="fas fa-tag"></i>
@@ -94,7 +94,7 @@ description: Exastroはシステムライフサイクル(設計・開発・設�
           </ul>
         </div>
       </div>
-      <div class="eventListDetail"><a class="eventListLink touch" href="/docs/event/20201118_ja.html"><span>詳細はこちら</span></a></div>
+      <div class="eventListDetail"><a class="eventListLink touch" href="/event/20201118.html"><span>詳細はこちら</span></a></div>
     </div>
   </li>
 
@@ -102,7 +102,7 @@ description: Exastroはシステムライフサイクル(設計・開発・設�
     <div class="eventListData">
       <div class="eventListDate"><span class="eventListType">Webセミナー</span>2020/09/11開催</div>
       <div class="eventListMainImage">
-        <img class="eventListImage" src="/docs/asset/event_img/20200911.jpg" alt="イベントイメージ">
+        <img class="eventListImage" src="https://exastro-suite.github.io/docs/asset/event_img/20200911.jpg" alt="イベントイメージ">
       </div>
       <div class="eventListOverview">
         <div class="eventListTag"><i class="fas fa-tag"></i>
@@ -127,7 +127,7 @@ description: Exastroはシステムライフサイクル(設計・開発・設�
           </ul>
         </div>
       </div>
-      <div class="eventListDetail"><a class="eventListLink touch" href="/docs/event/20200911_ja.html"><span>詳細はこちら</span></a></div>
+      <div class="eventListDetail"><a class="eventListLink touch" href="/event/20200911.html"><span>詳細はこちら</span></a></div>
     </div>
   </li>
 
