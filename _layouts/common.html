@@ -2,9 +2,7 @@
 ---
 <!doctype html>
 <html lang="{{ page.language }}">
-<head>
-    
-    
+<head>    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no,email=no,address=no">
@@ -14,9 +12,9 @@
     {% if page.page_name == "index" %}
     {% capture en %}{{ page.sub_dir }}/{% endcapture %}
     {% else %}
-    {% capture en %}{{ page.sub_dir }}/{{ page.page_name }}.html{% endcapture %}
+    {% capture en %}{{ page.sub_dir }}/{{ page.page_name }}_en.html{% endcapture %}
     {% endif %}{% assign enPage = site.html_pages | where: "url", en | first %}
-    {% capture ja %}{{ page.sub_dir }}/{{ page.page_name }}_ja.html{% endcapture %}{% assign jaPage = site.html_pages | where: "url", ja | first %}
+    {% capture ja %}{{ page.sub_dir }}/{{ page.page_name }}.html{% endcapture %}{% assign jaPage = site.html_pages | where: "url", ja | first %}
      <title>{{ page.title }} | Exastro{% if page.suite_name %} {{ page.suite_name }}{% endif %}</title>
     
     {% if enPage.name %}<link rel="alternate" hreflang="en" href="{{ page.repository }}{{ page.sub_dir }}/{{ page.page_name }}.html">
@@ -66,18 +64,18 @@
                 {% if page.language == "ja" %}
                 <div class="menuBar-ExastroMenu-Home"><a class="menuBar-ExastroMenu-Link touch exastro" href="/">Exastro Home</a></div>
                 <ul class="menuBar-ExastroMenu-List">
-                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch ita" href="/it-automation-docs/index_ja.html">IT Automation</a></li>
+                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch ita" href="https://exastro-suite.github.io/it-automation-docs/index_ja.html">IT Automation</a></li>
                     <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch pbc" target="_blank" href="https://github.com/exastro-suite/playbook-collection-docs/blob/master/README.ja.md" rel="noopener">Playbook Collection</a></li>
-                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch oase" href="/oase-docs/index_ja.html">OASE(<span>Operation Autonomy<br>Support Engine</span>)</a></li>
-                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch epoch" href="/epoch-docs/index_ja.html">EPOCH</a></li>
+                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch oase" href="https://exastro-suite.github.io/oase-docs/index_ja.html">OASE(<span>Operation Autonomy<br>Support Engine</span>)</a></li>
+                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch epoch" href="https://exastro-suite.github.io/epoch-docs/index_ja.html">EPOCH</a></li>
                 </ul>
                 {% else %}
                 <div class="menuBar-ExastroMenu-Home"><a class="menuBar-ExastroMenu-Link touch exastro" href="/index_ja.html">Exastro Home</a></div>
                 <ul class="menuBar-ExastroMenu-List">
-                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch ita" href="/it-automation-docs/index_ja.html">IT Automation</a></li>
-                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch pbc" target="_blank" href="https://github.com/exastro-suite/playbook-collection-docs/blob/master/README.ja.md" rel="noopener">Playbook Collection</a></li>
-                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch oase" href="/oase-docs/index_ja.html">OASE(<span>Operation Autonomy<br>Support Engine</span>)</a></li>
-                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch epoch" href="/epoch-docs/index_ja.html">EPOCH</a></li>
+                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch ita" href="https://exastro-suite.github.io/it-automation-docs/index.html">IT Automation</a></li>
+                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch pbc" target="_blank" href="https://github.com/exastro-suite/playbook-collection-docs/blob/master/README.md" rel="noopener">Playbook Collection</a></li>
+                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch oase" href="https://exastro-suite.github.io/oase-docs/index.html">OASE(<span>Operation Autonomy<br>Support Engine</span>)</a></li>
+                    <li class="menuBar-ExastroMenu-Item"><a class="menuBar-ExastroMenu-Link touch epoch" href="https://exastro-suite.github.io/epoch-docs/index.html">EPOCH</a></li>
                 </ul>
                 {% endif %}
             </div>
