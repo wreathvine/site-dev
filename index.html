@@ -187,6 +187,97 @@ page_name: index
 </main>
 <link rel="stylesheet" type="text/css" href="/docs/asset/css/home.css">
 <style>
+.loadWait *,
+.loadWait *::after,
+.loadWait *::before {
+  animation: none!important;
+  transition-duration: 0s!important;
+}
+.loadWait body { overflow: hidden; }
+.loadWait header,
+.loadWait #contentsMenu,
+.loadWait #topMove { opacity: 0; }
+
+#loading {
+overflow-y: hidden;
+display: none;
+position: fixed;
+left: 0; top: 0;
+z-index: 29999;
+width: 100%; height: 100%;
+background-color: rgba( 255,255,255,1 );
+background-image: linear-gradient( rgba( 0,0,0,0.9 ) 50%, transparent 50% ),radial-gradient( #666, #000 );
+background-size: 2px 2px, 100% 100%;
+will-change: transform opacity;
+}
+@keyframes loading {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+#loading::before {
+content: 'Loading Exastro';
+white-space: nowrap;
+display: block;
+position: fixed;
+left: 50%; top: 50%;
+z-index: 2;
+transform: translate(-50%,-50%);
+margin-top: -48px;
+margin-right: -0.8em;
+letter-spacing: 0.8em;
+text-shadow: 0 0 16px #000;
+font-family: Consolas, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+font-size: 14px;
+color: #FFF;
+animation: loadingText 0.2s linear infinite !important;
+}
+@keyframes loadingText {
+0% { opacity: 0.5; transform: translate(-50%,-50%) skewX(10deg); }
+25% { transform: translate(-50%,-50%) skewX(-10deg); }
+50% { opacity: 1; transform: translate(-50%,-50%) skewX(10deg); }
+75% { transform: translate(-50%,-50%) skewX(-10deg); }
+100% { opacity: 0.5; transform: translate(-50%,-50%) skewX(10deg); }
+}
+#loading::after {
+content: '';
+display: block;
+position: fixed;
+left: 50%; top: 50%;
+z-index: 1;
+transform: translate(-50%,-50%);
+width: 50%; height: 16px;
+max-width: 640px;
+background-color: #111;
+background-image: linear-gradient( 90deg, transparent, #111 25%, #111 75%, transparent ),
+linear-gradient( 90deg, #8599B4 50%, transparent 50% );
+background-position: 200% 0, 0 0;
+background-size: 200% 32px, 4px 4px;
+border: 2px solid #000;
+border-radius: 32px;
+box-shadow: 0 0 0 2px #3D5E88, 0 0 32px rgba( 0,0,0,0.9 );
+animation: loadingBarBack 1s linear infinite !important;
+}
+@keyframes loadingBarBack {
+0% { background-position: 200% 0, 0 0; }
+50% { background-position: 100% 0, 0 0; }
+100% { background-position: 200% 0, 0 0; }
+}
+.loadStart #loading {
+display: block;
+}
+.loadCompleat #loading {
+animation: loadingCompleat 0.8s linear forwards !important;
+}
+.loadCompleat #loading::before {
+content: 'Complete!';
+animation: none!important;
+color: #60C60D;
+}
+@keyframes loadingCompleat {
+0% { opacity: 1; }
+50% { opacity: 1; transform: scale(1); filter: blur( 0 ); }
+100% { opacity: 0; transform: scale(2); filter: blur( 10px ); }
+}
 #container {
     overflow: inherit;
     background: transparent;
