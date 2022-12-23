@@ -6,6 +6,7 @@ sub_dir: /message
 page_class: message-epoch
 page_name: epoch
 message_image: thought04.png
+message_type: EPOCH
 message_author: 塩田 聡
 detail_url: https://exastro-suite.github.io/epoch-docs/index_ja.html
 description: Exastroはシステムライフサイクル(設計・開発・設定・運用)をデジタル化・自動化・省力化することを目的としたオープンソースのソフトウェアスイートです。
