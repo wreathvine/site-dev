@@ -8,7 +8,7 @@ page_name: epoch
 message_image: thought04.png
 message_type: EPOCH
 message_author: Satoshi Shiota
-detail_url: https://exastro-suite.github.io/epoch-docs/index_en.html
+detail_url: https://exastro-suite.github.io/epoch-docs/index.html
 description: Exastro EPOCH is, by date, the newest software in the Exastro Suite. It is a tool specialized for "Offensive automation".
 ---
 <h2>What is this tool?</h2>

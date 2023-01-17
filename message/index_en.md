@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: common
-language: ja
+language: en
 sub_dir: /message
 page_class: message
 page_name: index
@@ -20,7 +20,7 @@ description: Messages from the Developers
     <div class="homeArticle-Body">
         <div class="homeMessage-Main">
             <div class="homeMessage-Body">
-                <h3 class="homeMessage-Body-Title">Thoughts for Exastro<span>　Koichi Yoshida</span></span></h3>
+                <h3 class="homeMessage-Body-Title">Thoughts for Exastro<span>　Koichi Yoshida</span></h3>
                 <h4 class="homeMessage-Body-SubTitle">Systems are progressively getting more complicated while human resources are reducing</h4>
                 <p class="homeMessage-Body-Par">What happens when tasks increases when there is a lack of human resources? All the additional work will be left to the current engineers, causing a wave of fatigued workers. I don't think any young people would look at an overworked engineer and think "I want to be an engineer!". Humans tends to admire positions and jobs where the workers are working smart, fast and stylish.</p>
                 <p class="homeMessage-Body-Par">Exastro does not only allow users to free themselves from a chain of troubles. We believe that it can play an important role in initiatives for expanding businesses.</p>

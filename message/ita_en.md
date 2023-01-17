@@ -8,7 +8,7 @@ page_name: ita
 message_image: thought02.png
 message_type: IT Automation
 message_author: Toru Wakitani
-detail_url: https://exastro-suite.github.io/it-automation-docs/index_en.html
+detail_url: https://exastro-suite.github.io/it-automation-docs/index.html
 description: This is the first software released in the Exastro Suite, "Exastro IT Automation". Is was made with the intent of automating individualistic system constructions which are often subject to human errors.
 ---
 <h2>What is this tool?</h2>

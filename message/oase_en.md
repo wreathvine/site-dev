@@ -8,7 +8,7 @@ page_name: oase
 message_image: thought03.png
 message_type: OASE
 message_author: Yuko Kawano
-detail_url: https://exastro-suite.github.io/oase-docs/index_en.html
+detail_url: https://exastro-suite.github.io/oase-docs/index.html
 description: This is the second software released in the Exastro Suite, Exastro Operation Autonomy Support Engine. It is a tool created to automate the process of handling system errors that occurs during system operation.
 ---
 <h2>What is this tool?</h2>
