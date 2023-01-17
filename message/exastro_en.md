@@ -1,5 +1,5 @@
 ---
-title: 開発者メッセージ | Exastro
+title: Messages from the Developers | Exastro
 layout: message
 language: en
 sub_dir: /message
