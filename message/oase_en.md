@@ -15,11 +15,11 @@ description: This is the second software released in the Exastro Suite, Exastro 
 
 <div class="image right"><img src="/message/img/image_oase01.jpg" alt="OASE image"></div>
 
-<p>This is the second software released in the Exastro Suite, Exastro Operation Autonomy Support Engine (hereinafter written as Exastro OASE). It is a tool created to automate the process of handling system errors that occurs during system operation. I think we can all agree it is highly inefficient to have a human constantly monitor the operation when they don't know when the error occurs. Exastro OASE automatically decides what to do with the detected error. We are grateful, as it has gotten a lot of attention with it's clear merit.</p>
+<p>This is Exastro Operation Autonomy Support Engine (hereinafter written as Exastro OASE), the second software released in the Exastro Suite. It is a tool created to automate the process of handling system errors that occurs during system operation. I think we can all agree it is highly inefficient to have a human constantly monitor the operation when they don't know when the error occurs. Exastro OASE automatically decides what to do with the detected error. We are grateful, as it has gotten a lot of attention with it's clear merit.</p>
 
 <h2>What are you focusing on when developing Exastro OASE?</h2>
 <p>In most cases, Exastro OASE operates without any people monitoring it.</p>
-<p>In other words, OASE could inflict more damage than do good if it didn’t function properly. It is of utmost importance that the tool itself is reliable as well as correctly configured. That is one of the reasons why we choose to prioritize usability when developing Exastro OASE.</p>
+<p>In other words, if OASE doesn't function properly, the error detection might be delayed, causing even more problems before the automation. It is of utmost importance that the tool itself is reliable as well as correctly configured. That is one of the reasons why we choose to prioritize usability when developing Exastro OASE.</p>
 <p>We also are aware that projects can operate for long periods, meaning that supervisor might change. Cases like these are some of the reasons why we focusing on making the software easy to use without requiring special expertise.</p>
 
 <h2>What hardships are you facing with developing OASE?</h2>
