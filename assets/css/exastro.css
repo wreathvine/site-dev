@@ -1095,7 +1095,7 @@ margin: 8px 0 0;
 }
 .homeMessage-Suite-Item,
 .homeColumn-Item,
-.handout-Item,
+.handout-Item {
 width: calc( 50% - 16px );
 }
 .homeArticle-Header {
