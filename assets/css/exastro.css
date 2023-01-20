@@ -937,7 +937,8 @@ font-size: 32px;
 letter-spacing: .75px;
 }
 .homeMessage-Suite-List,
-.homeColumn-List {
+.homeColumn-List,
+.handout-List {
 display: flex;
 flex-wrap: wrap;
 gap: 24px;
@@ -950,7 +951,8 @@ z-index: 1;
 justify-content: center;
 }
 .homeMessage-Suite-Item,
-.homeColumn-Item {
+.homeColumn-Item,
+.handout-Item {
 width: calc( 33.33333% - 16px );
 }
 .homeMessage-Suite-Link {
@@ -965,7 +967,8 @@ text-decoration: none;
 transition-duration: .1s;
 color: #333;
 }
-.homeColumn-Link {
+.homeColumn-Link,
+.handout-Link {
 overflow: hidden;
 display: block;
 height: 100%;
@@ -975,7 +978,8 @@ border-radius: 4px;
 box-shadow: 0 0 8px 2px rgba(0,0,0,.1);
 text-decoration: none;
 }
-.homeColumn-Photo {
+.homeColumn-Photo,
+.handout-Photo {
 overflow: hidden;
 }
 .homeColumn-SubTitle {
@@ -983,14 +987,20 @@ padding: 16px; margin-bottom: -20px;
 color: #666;
 font-size: 16px;
 }
-.homeColumn-Title {
+.handout-SubTitle {
+color: #666;
+font-size: 12px;
+}
+.homeColumn-Title,
+.handout-Title {
 padding: 16px;
 line-height: 1.5;
 font-weight: bold;
 font-size: 20px;
 color: #002B62;
 }
-.homeColumn-Date {
+.homeColumn-Date,
+.handout-Date {
 padding: 0 16px 16px;
 text-align: right;
 line-height: 1;
@@ -999,10 +1009,12 @@ color: #666;
 .homeMessage-Suite-Link.hover {
 transform: scale(1.03);
 }
-.homeColumn-Img {
+.homeColumn-Img,
+.handout-Img {
 transition-duration: .2s;
 }
-.homeColumn-Link.hover .homeColumn-Img {
+.homeColumn-Link.hover .homeColumn-Img,
+.handout-Link.hover .handout-Img {
 transform: scale(1.04);
 }
 .homeMessage-Suite-Photo {
@@ -1082,7 +1094,8 @@ display: block;
 margin: 8px 0 0;
 }
 .homeMessage-Suite-Item,
-.homeColumn-Item {
+.homeColumn-Item,
+.handout-Item {
 width: calc( 50% - 16px );
 }
 .homeArticle-Header {
@@ -1136,7 +1149,8 @@ max-width: 640px;
 margin: 0 auto; padding-bottom: 0;
 }
 .homeMessage-Suite-Item,
-.homeColumn-Item {
+.homeColumn-Item,
+.handout-Item {
 width: 100%;
 }
 .homeArticle-Header {
@@ -2271,22 +2285,25 @@ justify-content: center;
 width: 100%; max-width: 1080px;
 margin: 0 auto;
 }
-.handout-Item {
-width: 50%;
-padding: 0 64px;
+.handout-Link {
+display: flex;
+flex-direction: column;
+color: #333;
 }
-.handout-Card {
-overflow: hidden;
-background-color: #FFF;
-border-radius: 4px;
-box-shadow: 8px 8px 10px rgba(0,0,0,.3);
+.handout-Link > div {
+min-height: 0;
 }
-.handout-Image {
-padding: 8px;
-text-align: center;
+.handout-Text {
+flex: 1 1 auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
-.handout-Image-Img {
-width: calc( 50% - 16px );
+.handout-Title {
+flex: 1 1 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .handout-Download {
 padding: 16px 24px;
