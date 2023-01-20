@@ -6,6 +6,19 @@ layout: common
    Message
 ##################################################
 -->
+{% if page.language == "ja" %}
+    {% assign indexFile = "index.html" %}
+    {% assign messageTitle = "開発者メッセージ" %}
+    {% assign messageListTitle = "開発者メッセージ一覧" %}
+    {% assign messageHome = "Homeに戻る" %}
+    {% capture messageSuite %}Exastro {{ page.message_type }}の詳細はこちら{% endcapture %}
+{% else %}
+    {% assign indexFile = "index_en.html" %}
+    {% assign messageTitle = "Messages from the Developers" %}
+    {% assign messageListTitle = "Developer messages" %}
+    {% assign messageHome = "Return to Home" %}
+    {% capture messageSuite %}Learn more about Exastro {{ page.message_type }}{% endcapture %}
+{% endif %}
 <header id="header">
     <div class="header-Container">
         <div class="messageHeader">
@@ -13,7 +26,7 @@ layout: common
                 <img class="messageHeader-Img" alt="" src="/message/img/{{ page.message_image }}">
             </div>
             <div class="messageHeader-Text">
-                <h1 class="messageHeader-Title"><span>開発者メッセージ</span>Exastro {{ page.message_type }}</h1>
+                <h1 class="messageHeader-Title"><span>{{ messageTitle }}</span>Exastro {{ page.message_type }}</h1>
                 <div class="messageHeader-Name">{{ page.message_author }}</div>
             </div>        
         </div>
@@ -27,9 +40,9 @@ layout: common
 
                 <nav class="topicPath">
                     <ol class="topicPath-List">
-                        <li class="topicPath-Item"><a class="topicPath-Link" href="/index.html">HOME</a></li>
-                        <li class="topicPath-Item"><a class="topicPath-Link" href="/message/index.html">開発者メッセージ一覧</a></li>                        
-                        <li class="topicPath-Item">Exastro{% if message_type %} {{ message_type }}{% endif %}</li>
+                        <li class="topicPath-Item"><a class="topicPath-Link" href="/{{ indexFile }}">Home</a></li>
+                        <li class="topicPath-Item"><a class="topicPath-Link" href="/message/{{ indexFile }}">{{ messageListTitle }}</a></li>                        
+                        <li class="topicPath-Item">Exastro{% if page.message_type %} {{ page.message_type }}{% endif %}</li>
                     </ol>
                 </nav>
 
@@ -50,10 +63,10 @@ layout: common
                     <div class="section-FooterMenu">
                         <ul class="section-FooterMenu-List">
                             <li class="section-FooterMenu-Item">
-                                <a class="section-FooterMenu-Link touch" href="/"><span><i class="fa-solid fa-circle-arrow-left"></i> Homeに戻る</span></a>
+                                <a class="section-FooterMenu-Link touch" href="/{{ indexFile }}"><span><i class="fa-solid fa-circle-arrow-left"></i> {{ messageHome }}</span></a>
                             </li>
                             {% if page.message_type %}<li class="section-FooterMenu-Item">
-                                <a class="section-FooterMenu-Link touch" href="{{ page.detail_url }}"><span>Exastro {{ page.message_type }}の詳細はこちら <i class="fa-solid fa-circle-arrow-right"></i></span></a>
+                                <a class="section-FooterMenu-Link touch" href="{{ page.detail_url }}"><span>{{ messageSuite }} <i class="fa-solid fa-circle-arrow-right"></i></span></a>
                             </li>{% endif %}
                         </ul>
                     </div>
@@ -62,8 +75,9 @@ layout: common
             <div class="article-Footer">
                 <section  class="section">
                     <div class="messageMenu">
-                        <h2 class="section-SubTitle">開発者メッセージ一覧</h2>
+                        <h2 class="section-SubTitle">{{ messageListTitle }}</h2>
                         <ul class="messageMenu-List">
+                            {% if page.language == "ja" %}
                             <li class="messageMenu-Item"><a class="messageMenu-Link exastro touch" href="/message/exastro.html">
                                 <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu01.jpg"></div>
                                 <div class="messageMenu-Text">
@@ -92,6 +106,36 @@ layout: common
                                     <div class="messageMenu-SubTitle">自分たちが苦労している今の状況を解決してこそExastro</div>
                                 </div>
                             </a></li>
+                            {% else %}
+                            <li class="messageMenu-Item"><a class="messageMenu-Link exastro touch" href="/message/exastro_en.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="Koichi Yoshida" src="/message/img/thoughtMenu01.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>Messages from the Developers</span>Thoughts for Exastro</div>
+                                    <div class="messageMenu-SubTitle">Systems are progressively getting more complicated while human resources are reducing</div>
+                                </div>
+                            </a></li>
+                            <li class="messageMenu-Item"><a class="messageMenu-Link ita touch" href="/message/ita_en.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu02.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>Messages from the Developers</span>Exastro IT Automation</div>
+                                    <div class="messageMenu-SubTitle">The Origin of Exastro that started it all.</div>
+                                </div>
+                            </a></li>
+                            <li class="messageMenu-Item"><a class="messageMenu-Link oase touch" href="/message/oase_en.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu03.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>Messages from the Developers</span>Exastro OASE</div>
+                                    <div class="messageMenu-SubTitle">Leave manually monitoring operations 24/7 in the past.</div>
+                                </div>
+                            </a></li>
+                            <li class="messageMenu-Item"><a class="messageMenu-Link epoch touch" href="/message/epoch_en.html">
+                                <div class="messageMenu-Photo"><img class="messageMenu-Img" alt="" src="/message/img/thoughtMenu04.jpg"></div>
+                                <div class="messageMenu-Text">
+                                    <div class="messageMenu-Title"><span>Messages from the Developers</span>Exastro EPOCH</div>
+                                    <div class="messageMenu-SubTitle">Let Exastro help you when you are down.</div>
+                                </div>
+                            </a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </section>
