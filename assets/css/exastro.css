@@ -3438,7 +3438,7 @@ background-position: right 0, center, center;
 }
 .supportName {
 display: block;
-width: 70%;
+width: 70%; height: 35px;
 margin-bottom: 12px;
 }
 .supportText {
