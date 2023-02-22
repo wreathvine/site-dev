@@ -32,8 +32,8 @@ $( window ).one('load', function(){
       setTimeout(function(){
       
         var $target = $( locationHash ),
-            headerHeight = $('header').outerHeight(),
-            subMenuHeight = $('#contentsMenu').outerHeight();
+            headerHeight = ( $('#menuBar').length )? $('#menuBar').outerHeight(): 0,
+            subMenuHeight = ( $('#contentsMenu').lenght )? $('#contentsMenu').outerHeight(): 0;
         
         var scrollPosition = 0;
             
@@ -318,7 +318,7 @@ function youTubeIframeAPISet() {
     $('.youtubeEmbed').each( function() {
       var $youtubeEmbed = $( this ),
           youTubeID = $youtubeEmbed.attr('data-embed-id'),
-          thumbnailURL = 'http://i.ytimg.com/vi/' + youTubeID + '/sddefault.jpg';
+          thumbnailURL = 'https://i.ytimg.com/vi/' + youTubeID + '/sddefault.jpg';
       $youtubeEmbed.addClass('ready').css('background-image', 'url(' + thumbnailURL + ')');      
     });
 }
