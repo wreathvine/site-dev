@@ -503,4 +503,4 @@ The potential of OSS &amp; Ansible Playbook <i class="fas fa-external-link-alt">
 </article>
 
 </main>
-<script>youTubeIframeAPISet();</script>
+<script>$(function(){youTubeIframeAPISet();});</script>
