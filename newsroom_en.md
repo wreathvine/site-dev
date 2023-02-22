@@ -29,6 +29,21 @@ News Room</h1>
 <!-- NEWS LIST -->
 <ul>
 
+
+<li>
+<dl>
+<dt class="image"><a href="https://app.ferret-one.com/cms/preview/share/c20040822151/case/13?show_draft_template=false&token=ca3502d7-177b-4804-92c6-5882bfd854c7" class="touch" target="_blank" rel="noopener"><img src="/asset/newsroom_img/20230222_nikkeibp.jpg" alt="A place for in-house digital human resources to play an active role.<br>What is a proven operation automation method?"></a></dt>
+<dd class="tag"><i class="fas fa-tag"></i>
+  <ul>
+    <li><span class="ita">IT Automation</span></li>
+    <li><span class="oase">Operation Autonomy Support Engine</span></li>
+    <li><span class="epoch">EPOCH</span></li>
+  </ul>
+</dd>
+<dd class="title"><a href="https://special.nikkeibp.co.jp/atclh/NXT/23/nec0221/" target="_blank" rel="noopener">A place for in-house digital human resources to play an active role.<br>What is a proven operation automation method?</a></dd>
+<dd class="meta"><div class="media"><i class="far fa-sticky-note"></i> NIKKEI XTECH Special</div><div class="date"><i class="far fa-clock"></i> <time datetime="2023/02/22">2023/02/22</time></div></dd>
+</dl>
+</li>
 <li>
 <dl>
 <dt class="image"><a href="https://live.csdn.net/room/Hansen666666/bzbmxWjv?s=09" class="touch" target="_blank" rel="noopener"><img src="https://exastro-suite.github.io/docs/asset/newsroom_img/northeast_asia_oss_promotion_forum_211203.jpg" alt="19th Northeast Asia OSS Promotion forum"></a></dt>
@@ -488,3 +503,4 @@ The potential of OSS &amp; Ansible Playbook <i class="fas fa-external-link-alt">
 </article>
 
 </main>
+<script>youTubeIframeAPISet();</script>

@@ -31,6 +31,21 @@ News Room</h1>
 
 <li>
 <dl>
+<dt class="image"><a href="https://app.ferret-one.com/cms/preview/share/c20040822151/case/13?show_draft_template=false&token=ca3502d7-177b-4804-92c6-5882bfd854c7" class="touch" target="_blank" rel="noopener"><img src="/asset/newsroom_img/20230222_nikkeibp.jpg" alt="社内のデジタル人材に活躍の場を　実績豊富な運用自動化メソッドとは"></a></dt>
+<dd class="tag"><i class="fas fa-tag"></i>
+  <ul>
+    <li><span class="ita">IT Automation</span></li>
+    <li><span class="oase">Operation Autonomy Support Engine</span></li>
+    <li><span class="epoch">EPOCH</span></li>
+  </ul>
+</dd>
+<dd class="title"><a href="https://special.nikkeibp.co.jp/atclh/NXT/23/nec0221/" target="_blank" rel="noopener">社内のデジタル人材に活躍の場を<br>実績豊富な運用自動化メソッドとは</a></dd>
+<dd class="meta"><div class="media"><i class="far fa-sticky-note"></i> 日経XTECH Special</div><div class="date"><i class="far fa-clock"></i> <time datetime="2023/02/22">2023/02/22</time></div></dd>
+</dl>
+</li>
+
+<li>
+<dl>
 <dt class="image"><a href="https://app.ferret-one.com/cms/preview/share/c20040822151/case/13?show_draft_template=false&token=ca3502d7-177b-4804-92c6-5882bfd854c7" class="touch" target="_blank" rel="noopener"><img src="https://exastro-suite.github.io/docs/asset/newsroom_img/itmediapromo_20220801.jpg" alt="システム運用・構築のDXを推進するNEC、社内認知に向けたウェビナー企画を＠ITに任せた理由"></a></dt>
 <dd class="tag"><i class="fas fa-tag"></i>
   <ul>
@@ -541,3 +556,4 @@ OSS &amp; Ansible Playbookが持つ可能性 <i class="fas fa-external-link-alt"
 </article>
 
 </main>
+<script>youTubeIframeAPISet();</script>
