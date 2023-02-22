@@ -29,7 +29,7 @@ News Room</h1>
 <!-- NEWS LIST -->
 <ul>
 
-<li>
+<li id="news20230222">
 <dl>
 <dt class="image"><a href="https://special.nikkeibp.co.jp/atclh/NXT/23/nec0221/" class="touch" target="_blank" rel="noopener"><img src="/assets/newsroom_img/20230222_nikkeibp.jpg" alt="社内のデジタル人材に活躍の場を　実績豊富な運用自動化メソッドとは"></a></dt>
 <dd class="tag"><i class="fas fa-tag"></i>
@@ -71,7 +71,7 @@ News Room</h1>
     <li><span class="epoch">EPOCH</span></li>
   </ul>
 </dd>
-<dd class="title"><a href="https://www.itmedia.co.jp/news/articles/2206/09/news007.html" target="_blank" rel="noopener">@ITに対談記事が掲載されました<i class="fas fa-external-link-alt"></i><br>
+<dd class="title"><a href="https://www.itmedia.co.jp/news/articles/2206/09/news007.html" target="_blank" rel="noopener">@ITに対談記事が掲載されました <i class="fas fa-external-link-alt"></i><br>
 <small>「モード1」の刷新が導く“DXへの道”<br>効果的な業務効率化を実現する「自動化2.0」、その取り組み方は？<br>　～NEC、レッドハットの二社が徹底討論～</small></a></dd>
 <dd class="meta"><div class="media"><i class="far fa-sticky-note"></i> ITmedia</div><div class="date"><i class="far fa-clock"></i> <time datetime="2022/06/09">2022/06/09</time></div></dd>
 </dl>
@@ -88,7 +88,7 @@ News Room</h1>
     <li><span class="epoch">EPOCH</span></li>
   </ul>
 </dd>
-<dd class="title"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2203/28/news013.html" target="_blank" rel="noopener">@ITに対談記事が掲載されました<i class="fas fa-external-link-alt"></i><br>
+<dd class="title"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2203/28/news013.html" target="_blank" rel="noopener">@ITに対談記事が掲載されました <i class="fas fa-external-link-alt"></i><br>
 <small>日本企業の「モード2」が進展しない真因と現実的な進め方<br>　～NEC、レッドハット、HashiCorp三社が徹底討論～</small></a></dd>
 <dd class="meta"><div class="media"><i class="far fa-sticky-note"></i> ITmedia</div><div class="date"><i class="far fa-clock"></i> <time datetime="2022/03/28">2022/03/28</time></div></dd>
 </dl>
