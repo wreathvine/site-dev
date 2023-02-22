@@ -212,4 +212,95 @@ $b.on( popupEnter, '.popup', function(){
     }
 });
 
-}())
+// Tab Contents
+$('.tabContents, .webinarContainer').each( function(){
+    var $tabContents = $( this ),
+        openTabNum = ( $tabContents.attr('data-open-tab') === undefined )? 0: $tabContents.attr('data-open-tab');
+    $( this ).children('.tabMenu, .webinarVersionSelect').find('.tabMenuItem, .webinarVersionItem').eq( openTabNum ).addClass('tabOpen');
+    $( this ).children('.tabContent, .webinarContent').eq( openTabNum ).addClass('tabOpen');
+});
+$('.tabMenuLink, .webinarVersionLink').on('click', function( e ){
+    e.preventDefault();
+    var $a = $( this ),
+        $tabMenuItem = $a.parent(),
+        $targetTab = $( $a.attr('href') );
+    $tabMenuItem.siblings('.tabOpen').removeClass('tabOpen');
+    $tabMenuItem.closest('.tabContents, .webinarContainer').children('.tabOpen').removeClass('tabOpen');
+    $tabMenuItem.addClass('tabOpen');
+    $targetTab.addClass('tabOpen');
+});
+
+// News Room tab
+$('.documentSetInner').each( function(){
+    $( this ).children('.documentSetMenu').find('.documentSetMenuItem').eq(0).addClass('tabOpen');
+    $( this ).children('.documentSetContent').eq(0).addClass('tabOpen');
+});
+$('.documentSetMenuLink').on('click', function( e ){
+    e.preventDefault();
+    var $tabMenuItem = $( this ).parent(),
+        $targetTab = $( $( this ).attr('href') );
+    $tabMenuItem.siblings('.tabOpen').removeClass('tabOpen');
+    $tabMenuItem.closest('.documentSetInner').children('.tabOpen').removeClass('tabOpen');
+    $tabMenuItem.addClass('tabOpen');
+    $targetTab.addClass('tabOpen');
+});
+
+}());
+
+
+/*
+##################################################
+   YouTube
+##################################################
+*/
+
+// "YouTube iframe Player API" Set
+function youTubeIframeAPISet() {
+    var youtubeScript = document.createElement('script');
+    youtubeScript.src = 'https://www.youtube.com/iframe_api';
+    $('body').append( youtubeScript );
+    
+    // thumbnail
+    $('.youtubeEmbed').each( function() {
+      var $youtubeEmbed = $( this ),
+          youTubeID = $youtubeEmbed.attr('data-embed-id'),
+          thumbnailURL = 'http://i.ytimg.com/vi/' + youTubeID + '/sddefault.jpg';
+      $youtubeEmbed.addClass('ready').css('background-image', 'url(' + thumbnailURL + ')');      
+    });
+}
+// "Yotube iframe Player API" Ready
+function onYouTubeIframeAPIReady() {
+    var $youtubeEmbed = $('.youtubeEmbed');  
+    
+    $youtubeEmbed.on('click', function(){
+      var $loadYouTube = $( this ),
+          loadYouTubeID = $loadYouTube.attr('data-embed-id'),
+          width = $loadYouTube.width(),
+          height = $loadYouTube.outerHeight(),
+          start = Number( $loadYouTube.attr('data-start-time') );
+      if ( start === undefined ) start = 0;
+      console.log(start)
+      $loadYouTube.removeClass('ready').addClass('loading');
+      
+      var ytPlayer = new YT.Player(
+        loadYouTubeID, {
+          width: width,
+          height: height,
+          videoId: loadYouTubeID,
+          playerVars: {
+            'autoplay': 1,
+            'start': start,
+          },
+          events: {
+            'onReady': function(){
+              $loadYouTube.removeClass('loading').addClass('done');
+            }
+          }
+        }
+      );
+      
+      $('#' + loadYouTubeID ).on('load', function(){
+        $loadYouTube.removeClass('loading').addClass('done');
+      });
+    });
+}
