@@ -31,7 +31,7 @@ News Room</h1>
 
 <li>
 <dl>
-<dt class="image"><a href="https://app.ferret-one.com/cms/preview/share/c20040822151/case/13?show_draft_template=false&token=ca3502d7-177b-4804-92c6-5882bfd854c7" class="touch" target="_blank" rel="noopener"><img src="/asset/newsroom_img/20230222_nikkeibp.jpg" alt="社内のデジタル人材に活躍の場を　実績豊富な運用自動化メソッドとは"></a></dt>
+<dt class="image"><a href="https://special.nikkeibp.co.jp/atclh/NXT/23/nec0221/" class="touch" target="_blank" rel="noopener"><img src="/asset/newsroom_img/20230222_nikkeibp.jpg" alt="社内のデジタル人材に活躍の場を　実績豊富な運用自動化メソッドとは"></a></dt>
 <dd class="tag"><i class="fas fa-tag"></i>
   <ul>
     <li><span class="ita">IT Automation</span></li>
