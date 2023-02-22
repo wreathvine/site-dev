@@ -1,5 +1,59 @@
 // JavaScript Document
 
+// HASH
+var locationHash = window.location.hash;
+if ( locationHash.match('^#\/') ) {
+    locationHash = undefined;
+} else if ( locationHash ) {
+    window.location.hash = '';
+}
+
+// LOAD
+$('html').addClass('loadWait');
+
+// $window load timeout.
+var commonloadTimeoutTime = 3000;
+var commonloadTimer = setTimeout(
+  function(){
+    $( window ).load();
+  }, commonloadTimeoutTime
+);
+
+$( window ).one('load', function(){
+
+  clearTimeout( commonloadTimer );
+  $('html').removeClass('loadWait');
+  
+  // Anker scroll
+  if( locationHash ) {
+    if ( $( locationHash ).length ) {
+      window.location.hash = locationHash;
+      $('html, body').scrollTop( 0 );
+      setTimeout(function(){
+      
+        var $target = $( locationHash ),
+            headerHeight = ( $('#menuBar').length )? $('#menuBar').outerHeight(): 0,
+            subMenuHeight = ( $('#contentsMenu').lenght )? $('#contentsMenu').outerHeight(): 0;
+        
+        var scrollPosition = 0;
+            
+        if ( $target.is('.tabContent') ) {
+          scrollPosition = $target.closest('section').offset().top - headerHeight - subMenuHeight;
+        } else {
+          scrollPosition = $target.offset().top - headerHeight - subMenuHeight;
+        }
+            
+        $('html, body').animate({ scrollTop: scrollPosition }, 300, 'swing');
+        if( $( locationHash ).is('.toggleHeading') ) {
+          setTimeout(function(){
+            $( locationHash ).click();
+          }, 400 );
+        }
+      }, 100 );
+    }
+  }
+});
+
 (function(){
 
 /*
@@ -264,7 +318,7 @@ function youTubeIframeAPISet() {
     $('.youtubeEmbed').each( function() {
       var $youtubeEmbed = $( this ),
           youTubeID = $youtubeEmbed.attr('data-embed-id'),
-          thumbnailURL = 'http://i.ytimg.com/vi/' + youTubeID + '/sddefault.jpg';
+          thumbnailURL = 'https://i.ytimg.com/vi/' + youTubeID + '/sddefault.jpg';
       $youtubeEmbed.addClass('ready').css('background-image', 'url(' + thumbnailURL + ')');      
     });
 }
