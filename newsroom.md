@@ -556,4 +556,4 @@ OSS &amp; Ansible Playbookが持つ可能性 <i class="fas fa-external-link-alt"
 </article>
 
 </main>
-<script>$(function(){youTubeIframeAPISet();});</script>
+<script>youTubeIframeAPISet();</script>
