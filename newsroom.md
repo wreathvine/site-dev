@@ -39,7 +39,7 @@ News Room</h1>
     <li><span class="epoch">EPOCH</span></li>
   </ul>
 </dd>
-<dd class="title"><a href="https://special.nikkeibp.co.jp/atclh/NXT/23/nec0221/" target="_blank" rel="noopener">社内のデジタル人材に活躍の場を<br>実績豊富な運用自動化メソッドとは</a></dd>
+<dd class="title"><a href="https://special.nikkeibp.co.jp/atclh/NXT/23/nec0221/" target="_blank" rel="noopener">社内のデジタル人材に活躍の場を<br>実績豊富な運用自動化メソッドとは <i class="fas fa-external-link-alt"></i></a></dd>
 <dd class="meta"><div class="media"><i class="far fa-sticky-note"></i> 日経XTECH Special</div><div class="date"><i class="far fa-clock"></i> <time datetime="2023/02/22">2023/02/22</time></div></dd>
 </dl>
 </li>
@@ -54,7 +54,7 @@ News Room</h1>
     <li><span class="epoch">EPOCH</span></li>
   </ul>
 </dd>
-<dd class="title"><a href="https://app.ferret-one.com/cms/preview/share/c20040822151/case/13?show_draft_template=false&token=ca3502d7-177b-4804-92c6-5882bfd854c7" target="_blank" rel="noopener">ITmedia社の導入事例にExastroの取り組みが掲載されました<i class="fas fa-external-link-alt"></i><br>
+<dd class="title"><a href="https://app.ferret-one.com/cms/preview/share/c20040822151/case/13?show_draft_template=false&token=ca3502d7-177b-4804-92c6-5882bfd854c7" target="_blank" rel="noopener">ITmedia社の導入事例にExastroの取り組みが掲載されました <i class="fas fa-external-link-alt"></i><br>
 <small>システム運用・構築のDXを推進するNEC<br>社内認知に向けたウェビナー企画を＠ITに任せた理由</small></a></dd>
 <dd class="meta"><div class="media"><i class="far fa-sticky-note"></i> ITmedia</div><div class="date"><i class="far fa-clock"></i> <time datetime="2022/08/01">2022/08/01</time></div></dd>
 </dl>
