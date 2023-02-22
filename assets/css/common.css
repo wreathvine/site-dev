@@ -34,7 +34,7 @@ img{max-width:100%;vertical-align: top;}
 */
 #container {
 background: #E6E6E6;
-background-image: url("../img/common_background.png");
+background-image: url("/assets/img/common_background.png");
 }
 
 /*
