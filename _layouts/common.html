@@ -3,6 +3,8 @@
 <!doctype html>
 <html lang="{{ page.language }}">
 <head>
+{% if site.url contains "-dev" %}{% assign devFlag = true %}{% assign commonAssetsUrl = "https://staging.exastro.org" %}{% else %}{% assign devFlag = false %}{% assign commonAssetsUrl = "https://www.exastro.org" %}{% endif %}
+{% unless devFlag %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144561796-1"></script>
     <script>
@@ -12,6 +14,8 @@
 
         gtag('config', 'UA-144561796-1');
     </script>
+{% endunless %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no,email=no,address=no">
@@ -30,8 +34,8 @@
     
      <title>{{ page.title }} | Exastro{% if page.suite_name %} {{ page.suite_name }}{% endif %}</title>
     
-    {% if enPage.name %}<link rel="alternate" hreflang="en" href="{{ page.repository }}{{ page.sub_dir }}/{{ page.page_name }}_en.html">
-    {% endif %}{% if jaPage.name %}<link rel="alternate" hreflang="ja" href="{{ page.repository }}{{ page.sub_dir }}/{{ page.page_name }}.html">
+    {% if enPage.name %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.sub_dir }}/{{ page.page_name }}_en.html">
+    {% endif %}{% if jaPage.name %}<link rel="alternate" hreflang="ja" href="{{ site.url }}{{ page.sub_dir }}/{{ page.page_name }}.html">
     {% endif %}<!-- Font Awesome 6.1.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -60,7 +64,7 @@
 {% include head.html %}
     
 </head>
-<body class="docs-{{ page.docs }} lang-{{ page.language}} page-{{ page.page_class }}">
+<body class="{% if page.docs %}docs-{{ page.docs }}{% endif %}{% if page.language %} lang-{{ page.language }}{% endif %}{% if page.page_class %} page-{{ page.page_class }}{% endif %}">
 <div id="container">
 <!--
 ##################################################
@@ -153,10 +157,10 @@
    JavaScript
 ##################################################
 -->
-<script src="/assets/js/common.js"></script>
-<script src="/assets/js/article.js"></script>
+<script src="{{ commonAssetsUrl }}/assets/js/common.js"></script>
+<script src="{{ commonAssetsUrl }}/assets/js/article.js"></script>
 {% include scripts.html %}
-
+{% unless devFlag %}
 <script type="text/javascript">
 piAId = '873721';
 piCId = '21538';
@@ -172,5 +176,6 @@ piHostname = 'pi.pardot.com';
 	else { window.addEventListener('load', async_load, false); }
 })();
 </script>
+{% endunless %}
 </body>
 </html>
