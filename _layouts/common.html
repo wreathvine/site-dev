@@ -21,7 +21,7 @@
     <meta name="format-detection" content="telephone=no,email=no,address=no">
     <meta name="theme-color" content="#002B62">
     <meta http-equiv="content-language" content="{{ page.language }}">
-{% unless devFlag %}    <meta name="robots" content="none">{% endunless %}
+{% if devFlag %}    <meta name="robots" content="none">{% endif %}
 {% if page.page_name == "index" %}{% capture ja %}{{ page.sub_dir }}/{% endcapture %}{% else %}{% capture ja %}{{ page.sub_dir }}/{{ page.page_name }}.html{% endcapture %}{% endif %}
 {% assign jaPage = site.html_pages | where: "url", ja | first %}
 {% capture en %}{{ page.sub_dir }}/{{ page.page_name }}_en.html{% endcapture %}
