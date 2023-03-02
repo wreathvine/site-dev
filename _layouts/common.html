@@ -3,11 +3,7 @@
 <!doctype html>
 <html lang="{{ page.language }}">
 <head>
-{% if site.url contains "-dev" or "staging" or "katokeita" %}
-    {% assign devFlag = true %}{% assign commonAssetsUrl = "https://staging.exastro.org" %}
-{% else %}
-    {% assign devFlag = false %}{% assign commonAssetsUrl = "https://www.exastro.org" %}
-{% endif %}
+{% if site.url contains "-dev" or "staging" or "katokeita" %}{% assign devFlag = true %}{% assign commonAssetsUrl = "https://staging.exastro.org" %}{% else %}{% assign devFlag = false %}{% assign commonAssetsUrl = "https://www.exastro.org" %}{% endif %}
 {% unless devFlag %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144561796-1"></script>
@@ -25,17 +21,11 @@
     <meta name="format-detection" content="telephone=no,email=no,address=no">
     <meta name="theme-color" content="#002B62">
     <meta http-equiv="content-language" content="{{ page.language }}">
-    
-    {% if page.page_name == "index" %}
-        {% capture ja %}{{ page.sub_dir }}/{% endcapture %}
-    {% else %}
-        {% capture ja %}{{ page.sub_dir }}/{{ page.page_name }}.html{% endcapture %}
-    {% endif %}
-    {% assign jaPage = site.html_pages | where: "url", ja | first %}
-    
-    {% capture en %}{{ page.sub_dir }}/{{ page.page_name }}_en.html{% endcapture %}
-    {% assign enPage = site.html_pages | where: "url", en | first %}
-    
+{% unless devFlag %}    <meta name="robots" content="none">{% endunless %}
+{% if page.page_name == "index" %}{% capture ja %}{{ page.sub_dir }}/{% endcapture %}{% else %}{% capture ja %}{{ page.sub_dir }}/{{ page.page_name }}.html{% endcapture %}{% endif %}
+{% assign jaPage = site.html_pages | where: "url", ja | first %}
+{% capture en %}{{ page.sub_dir }}/{{ page.page_name }}_en.html{% endcapture %}
+{% assign enPage = site.html_pages | where: "url", en | first %}    
      <title>{{ page.title }} | Exastro{% if page.suite_name %} {{ page.suite_name }}{% endif %}</title>
     
     {% if enPage.name %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.sub_dir }}/{{ page.page_name }}_en.html">
