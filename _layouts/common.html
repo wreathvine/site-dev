@@ -2,9 +2,8 @@
 ---
 <!doctype html>
 <html lang="{{ page.language }}">
-<head>
-<!-- {{ site.url }} -->
-{% if site.url contains "staging" or "katokeita" %}
+<head><!-- {{ site.url }} -->
+{% if site.url contains "staging" %}
     {% assign devFlag = true %}
     {% assign commonAssetsUrl = "https://staging.exastro.org" %}
 {% else %}
