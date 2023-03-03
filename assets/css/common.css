@@ -547,7 +547,7 @@ flex-wrap: wrap;
 gap: 32px;
 }
 .footer-Suite-Item {
-width: calc( 25% - 24px );
+width: 208px;
 }
 .footer-SuiteMenu-List {
 padding-left: 32px;
