@@ -568,6 +568,12 @@ margin-right: 8px;
 text-align: center;
 opacity: .5;
 }
+.footer-Suite-Version {
+font-size: 10px;
+}
+.footer-Suite-Version > span {
+foant-size: 16px;
+}
 /*
    footer-copyright
 */
