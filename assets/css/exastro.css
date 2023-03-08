@@ -1835,8 +1835,8 @@ border-width: 2px;
 display: flex;
 flex-direction: column;
 }
-.overview-Suite-Detail-Item .overview-Suite-Detail-Link {
-width: 80%;
+.overview-Suite-Detail-Item {
+max-width: none;
 }
 .overview-Suite-Detail-Br {
 display: none;
