@@ -1684,6 +1684,23 @@ box-shadow: 2px 2px 4px rgba(0,0,0,.5);
 line-height: 1.5;
 font-size: 20px;
 }
+.overview-Suite-Detail-List {
+display: flex;
+gap: 32px;
+justify-content: space-around;
+}
+.overview-Suite-Detail-Item {
+flex: 1 1 100%;
+}
+.overview-Suite-Detail-Item .overview-Suite-Detail-Link {
+width: 90%;
+}
+.overview-Suite-Detail-Note {
+border-top: 1px solid #DDD;
+padding-top: 10px;
+margin-top: 8px;
+font-size: 24px;
+}
 
 @media screen and ( max-width: 960px ) {
 
@@ -1762,6 +1779,16 @@ justify-content: center;
 .overview-Suite-Images-Item {
 width: calc( 50% - 16px );
 border-width: 2px;
+}
+.overview-Suite-Detail-List {
+display: flex;
+flex-direction: column;
+}
+.overview-Suite-Detail-Item .overview-Suite-Detail-Link {
+width: 80%;
+}
+.overview-Suite-Detail-Br {
+display: none;
 }
 
 }
