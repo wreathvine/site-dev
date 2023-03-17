@@ -1284,12 +1284,12 @@ text-indent: -1em;
 line-height: 1.5;
 font-size: 0.8rem;
 }
-#articleBody .loupe {
+.loupe {
 display: block;
 position: relative;
 cursor: pointer;
 }
-#articleBody .loupe.hover::before {
+.loupe.hover::before {
 content: '';
 display: block;
 position: absolute;
@@ -1298,7 +1298,7 @@ width: 100%; height: 100%;
 background-color: rgba( 0,0,0,0.1 );
 pointer-events: none;
 }
-#articleBody .loupe.hover::after {
+.loupe.hover::after {
 font-family: "Font Awesome 5 Free";
 font-weight: 900;
 content: '\f00e';
