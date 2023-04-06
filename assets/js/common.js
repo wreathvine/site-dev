@@ -215,33 +215,6 @@ $('.loupe').on( ev.click, function(){
     $imageBox.find('.image').html( imageHTML );
 
     imageHTML.on('load', function(){
-        const imageBoxWidth = $imageBox.find('img').outerWidth(),
-              imageBoxMargin = $imageBox.find('img').css('margin').replace('px','');
-
-        const imageBoxSet = function( scale ) {
-            const imageBoxScaleWidth = imageBoxWidth * ( scale / 100 ),
-                  windowWidth = $( window ).width(),
-                  windowHeight = $( window ).height();
-
-            $imageBox.attr('data-scale', scale );
-            $imageBox.find('.scale').text( scale + '%');
-            $imageBox.find('img').css('width', imageBoxScaleWidth );
-
-            const imageHeight = $imageBox.find('img').outerHeight();
-
-            if( windowWidth <= imageBoxScaleWidth || windowHeight <= imageHeight ) {
-                $imageBox
-                    .scrollLeft( ( imageBoxScaleWidth - windowWidth + ( imageBoxMargin * 2 ) ) / 2 )
-                    .scrollTop( ( imageHeight - windowHeight + ( imageBoxMargin * 2 ) ) / 2 );
-            }
-        }
-
-        $imageBox.find('img').css({
-            'max-width': 'none',
-            'max-height': 'none'
-        });
-        imageBoxSet( 100 );
-
         // Close click close
         $imageBox.find('button.close, .imageBoxInner').on('click', function(){
             closeImageBox();
