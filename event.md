@@ -24,11 +24,44 @@ description: Exastroはシステムライフサイクル(設計・開発・設�
 
 <section id="newsList">
 <div class="sectionInner">
-
 <h2><em>Exastro</em> イベント一覧</h2>
 
 <ul class="eventList">
 
+  <li class="eventListItem">
+    <div class="eventListData">
+      <div class="eventListDate"><span class="eventListType">Webセミナー</span>2023/7/13-14開催</div>
+      <div class="eventListMainImage">
+        <img class="eventListImage" src="./assets/event_img/20230714.jpg" alt="イベントイメージ">
+      </div>
+      <div class="eventListOverview">
+        <div class="eventListTag"><i class="fas fa-tag"></i>
+          <ul class="eventListTagList">
+            <li class="eventListTagItem"><span class="eventTag ita">IT Automation</span></li>
+            <li class="eventListTagItem"><span class="eventTag oase">Operation Autonomy Support Engine</span></li>
+            <li class="eventListTagItem"><span class="eventTag epoch">EPOCH</span></li>
+          </ul>
+        </div>
+        <div class="eventListTitle">TECH+フォーラム クラウドインフラ Days 2023 Jul.<br>ビジネスを支えるクラウドの本質</div>
+        <div class="eventListSubTitle">クラウドが自社のビジネスにもたらす真の価値とは<br>変革が叫ばれるいま、改めてその本質を考察する</div>
+        <div class="eventListSummary">
+          不確実性が高く、変化へのスピーディな対応が求められる現代。<br>
+自社のビジネスに於いて競争優位・差別化要素を作り出す領域へリソースをシフトするために、 ビジネスの広範囲を支えるITインフラのあり方を再考する時機に差し掛かっています。顧客のニーズにいち早く対応するには、クラウドの利用を前提とし、その特性を活かせるよう設計を最適化するために必要なこととは何でしょうか。 本フォーラムでは、クラウドインフラDaysと題し、「Day1:クラウドへの移行、活用」「Day2:クラウドネイティブ」の2つのテーマにフォーカスし、2日間にわたり開催します。
+        </div>
+        <div class="eventListMeta">
+          <ul class="eventListMetaList">
+            <li class="eventListMetaItem">主催：株式会社マイナビ TECH+セミナー運営事務局</li>
+            <li class="eventListMetaItem">開催場所：オンライン</li>
+            <li class="eventListMetaItem">参加費：無料</li>
+            <li class="eventListMetaItem">参加申込：必要</li>
+            <li class="eventListMetaItem">申込締切：2023/7/14（金）まで</li>
+          </ul>
+        </div>
+      </div>
+      <div class="eventListDetail"><a class="eventListLink touch" href="https://news.mynavi.jp/techplus/lp/2023/enterprise/cloud_infrastructure202307/" target="_blank"><span>参加申込はこちら</span></a></div>
+    </div>
+  </li>
+  
   <li class="eventListItem">
     <div class="eventListData">
       <div class="eventListDate"><span class="eventListType">Webセミナー</span>2022/12/8開催</div>
